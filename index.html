@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="main.js"></script>
+    <main>
+        <table id="table1">
+            <tr id="result">
+                <td id="resultth" colspan="4"></td>
+              </tr>
+            <tr id="first">
+              <th id="ac" colspan="2" onclick="clearresult()">AC</th>
+              <th id="percent"onclick="add('/100')">%</th>
+              <th id="division"onclick="add('/')">÷</th>
+            </tr>
+            <tr id="second">
+              <td id="seven"onclick="add('7')">7</td>
+              <td id="eight"onclick="add('8')">8</td>
+              <td id="nine"onclick="add('9')">9</td>
+              <th id="multiplication"onclick="add('*')">x</th>
+            </tr>
+            <tr id="third">
+              <td id="four"onclick="add('4')">4</td>
+              <td id="five"onclick="add('5')">5</td>
+              <td id="six"onclick="add('6')">6</td>
+              <th id="minus"onclick="add('-')">-</th>
+            </tr>
+            <tr id="fourth">
+                <td id="one"onclick="add('1')">1</td>
+                <td id="two"onclick="add('2')">2</td>
+                <td id="three"onclick="add('3')">3</td>
+                <th id="plus"onclick="add('+')">+</th>
+              </tr>
+            <tr id="fifth">
+              <td id="null" colspan="2"onclick="add('0')">0</td>
+              
+              <td id="comma"onclick="add(',')">,</td>
+              <th id="count"onclick="solve()">=</th>
+            </tr>
+          </table>
+          
+    </main>
+    
+   
+</body>
+</html>
